@@ -1,6 +1,7 @@
 body {
 	margin: 0;
-	color: ivory;
+	/*color: ivory;*/
+	color: #666;
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -42,6 +43,8 @@ section ul li {
 	display: inline-block;
 	margin: 20px 30px;
 	list-style-type: none;
+	font-size: .9em;
+	font-weight: 300;
 }
 
 nav ul {
@@ -51,10 +54,16 @@ header {
 	text-align: center;
 }
 
+h1 {
+	margin: 30px 0;
+	font-size: 1.8em;
+	color: ivory;
+}
+
 h2 {
 	margin: 30px 0;
 	font-size: 1.8em;
-	color: #FFFFFF;
+	color: #999;
 }
 
 p {
@@ -82,14 +91,31 @@ footer p {
 }
 
 section {
-	padding: 25px 0;
 	text-align: center;
+	padding: 25px 0;
+}
+
+section.code {
+	padding: 25px 0;
+}
+
+section.hello {
+	padding: 70px 0;
+}
+
+section.work {
 }
 
 section p {
 	width: 65%;
 	margin: 0 auto;
-	padding: 125px 25px;
+	padding: 0 0 50px 25px;
+}
+
+.divider {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	width: 80%;
+	margin: 0 auto;
 }
 
 a {
@@ -97,15 +123,19 @@ a {
 }
 
 .hello {
-	background-color: #333;
+	background: linear-gradient(
+		rgba(0,0,0, 0.2),
+		rgba(0,0,0, 0.5)
+		),
+	url('../imgs/internet.jpg');
 }
 
 .code {
-	background-color: #6899B0;
+	/*background-color: #6899B0;*/
 }
 
 .work {
-	background-color: #03A9F4;
+	/*background-color: #03A9F4;*/
 }
 
 .internet {
