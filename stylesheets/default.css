@@ -127,7 +127,7 @@ a {
 		rgba(0,0,0, 0.2),
 		rgba(0,0,0, 0.5)
 		),
-	url('../imgs/internet.jpg');
+	url('../imgs/internet.jpg') center;
 }
 
 .code {
