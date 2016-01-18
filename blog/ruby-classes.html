@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <title>Ruby Classes</title>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+    <body>
+      <section>
+        <header>
+          <h3>Ryan F. Salerno</h3>
+          <h4>January 16, 2016</h4>
+        </header>
+        <article>
+          <img src="../imgs/duck.jpg" />
+          <h1>Ruby Classes</h1>
+          <h2>Setting up classes with instance variables and methods</h2>
+          <p>Setting up a class:</p>
+          <code>class PlayingCard<br />
+SUITS = %w{ clubs diamonds hearts spades }<br />
+RANKS = %w{2345678910JQKA}<br />
+class Deck def cards<br />
+    @cards.to_enum<br />
+   end<br />
+def initialize(n=1) @cards = [] SUITS.cycle(n) do |s|<br />
+RANKS.cycle(1) do |r| @cards << "#{r} of #{s}"<br />
+end<br />
+end<br />
+end<br />
+end<br />
+end
+</code>
+<p>Using instance variables and methods makes sense when those objects are local to your class. If they need to be accessed globally, then it makes sense to use a global variable. </p>
+<p>It's useful to organize your program this way because when variables and methods are local to the class, you can have smaller functions that do and return one value, and manipulate them through the class. </p>
+        </article>
+      <footer>
+        <p>&copy; 2015, Ryan F. Salerno. All rights reserved.</p>
+      </footer>
+      </section>
+    </body>
+</html>
