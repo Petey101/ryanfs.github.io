@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <title>Blog Post Template</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+    </head>
+    <body>
+      <header>
+        <h3>Ryan F. Salerno</h3>
+        <h4>January 30, 2015</h4>
+      </header>
+
+      <article>
+        <h1>DBC Phase 0 Cheat Sheet</h1>
+        <h2>Covering topics that require a little extra review</h2>
+        <!-- <img src="../imgs/duck.jpg" /> -->
+      </article>
+
+      <article>
+        <h3>SQL</h3>
+        <p><strong>Databases are made up of</strong><br>
+          Entities: e.g. Person<br>
+          Attributes: e.g. height, weight, gender, car<br>
+          Relationships: "People have cars" (one to many)</p>
+      </article>
+      <article><h3>Ruby Variable Scopes</h3>
+      <p>
+        <ul>
+          <li><strong>local_variable</strong><br>Visible in the scope its defined.</li>
+          <li><strong>$global_variable</strong><br>visible everywhere</li>
+          <li><strong>CONSTANT_VARIABLE</strong><br>also has global scope<br>It's basically the same thing as a global variable, however, once you define it, you cannot redefine</li>
+          <li><strong>@instance_vairable</strong><br>Visible only to a single instance of a class</li>
+          <li><strong>@@class_variable</strong><br>Visible to ALL instances of the SAME class</li>
+        </ul>
+      </p>
+      </article>
+      <article>
+        <h3>Ruby Hashes</h3>
+        <p>Change the value of a hash</p>
+        <img src="imgs/hash.png">
+      </article>
+
+
+      <article>
+        <h3>Ruby Error Messages</h3>
+             <p>
+          <ul>
+            <li><strong>unexpected keyword_end, expecting end-of-input</strong><br />
+you have an end in there that doesn't belong. Either the beginning of the block is wrong or it's an extra end</li>
+            <li><strong>unexpected tSTRING_BEG, expecting end of input</strong><br>it was expecting the beginning of a string, so a single or double quote</li>
+            <li><strong>unexpected token</strong><br>extra character in there that shouldn't be there</li>
+            <li><strong>undefined method 'length' for nil:NilClass (NoMethodError)</strong><br>trying to call a method, in this case length, on a variable that evaluates to nil.</li>
+            <li><strong>private method 'append_feat' called for array</strong><br>you can just call the method on its own</li>
+            <li><strong>no implicit conversion of Fixnum into string (TypeError)</strong><br>you're trying to add a string with an integer, but there's no way to do it</li>
+          </ul>
+        </p>
+      </article>
+      <article>
+        <h3>Git and GitHub</h3>
+        <p>git remote -v</p>
+        <p>Delete branch: git branch -d other-branch</p>
+        <p>git checkout -b new-branch</p>
+      </article>
+      <article>
+        <h3>Common Command Line... commands</h3>
+        <p>
+          <ul>
+            <li>grep -n "word" filename.txt.utf-8</li>
+            <li>head -20 filename.txt.utf-8 (look at first 20 lines)</li>
+            <li>tail -20 filname.txt.utf-8</li>
+            <li>cat: shows you the full file</li>
+            <li>less filename.txt-utf-8</li>
+          </ul>
+        </p>
+      </article>
+      <article>
+        <h3>Further Reading</h3>
+        <p>Once the course is over (or if I have time to get started during the course), these books are on my list:</p>
+        <ul>
+          <li>Clean Code</li>
+          <li>Extreme Programming Pocket Guide</li>
+          <li>Agile Estimating and Planning</li>
+          <li>Pragmatic Programmer</li>
+          <li>Learn Git</li>
+        </ul>
+      </article>
+      <footer>
+        <p>&copy; 2016, Ryan F. Salerno</p>
+      </footer>
+    </body>
+</html>
