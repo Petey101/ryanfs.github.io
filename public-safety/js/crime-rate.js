@@ -347,8 +347,10 @@ function _createAreaChart (stateName, stateData) {
         },
         series: [{
             name: stateName,
-            data: stateData
-        }]
+            data: stateData,
+            color: '#66ccff',
+            fillOpacity: 1
+        }],
     });
 }
 

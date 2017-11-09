@@ -1,6 +1,6 @@
 .crime-rate-chart-section {
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
-  color: #333;
+  color: #525252;
   padding: 30px;
 }
 
@@ -26,15 +26,15 @@
 }
 
 .blue {
-  color: #2196F3;
+  color: #bee8fd;
 }
 
 .red {
-  color: #E76946;
+  color: #f05a22;
 }
 
 .yellow {
-  color: #FBB731;
+  color: #fbd813;
 }
 
 .salmon {
