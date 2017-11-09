@@ -1,18 +1,24 @@
 $(document).ready(function() {
-    generateDashboard()
+    _init('CA')
 });
 
-function generateDashboard() {
+function _init(defaultState) {
+    if (defaultState) { _generateDashboards(defaultState); }
+
     $('select').change(function(){
         var stateAbbrev = this.value;
-        dashboardAreaChart(stateAbbrev);
-        appendStateDescription(stateAbbrev);
-        dashboardHomocideRate(stateAbbrev);
-        dashboardRapeRate(stateAbbrev);
-        dashboardRobberyRate(stateAbbrev);
-        dashboardAssaultRate(stateAbbrev);
-        dashboardPopAreaBarCharts(stateAbbrev);
+        _generateDashboards(stateAbbrev);
     });
+}
+
+function _generateDashboards (state) {
+    dashboardAreaChart(state);
+    appendStateDescription(state);
+    dashboardHomocideRate(state);
+    dashboardRapeRate(state);
+    dashboardRobberyRate(state);
+    dashboardAssaultRate(state);
+    dashboardPopAreaBarCharts(state);
 }
 
 function dashboardPopAreaBarCharts (state) {
