@@ -1,0 +1,75 @@
+.crime-rate-chart-section {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+  color: #333;
+  padding: 30px;
+}
+
+.crime-rate-chart-section p {
+  margin: 20px;
+  line-height: 1.5em;
+}
+
+.chart-container {
+  padding: 30px;
+}
+
+.percent-change {
+  position: absolute;
+  top: 42%;
+  left: 70%;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.blue {
+  color: #2196F3;
+}
+
+.red {
+  color: #E76946;
+}
+
+.yellow {
+  color: #FBB731;
+}
+
+.salmon {
+  color: #FAAA96;
+}
+
+.area-chart {
+  height:400px;
+}
+
+.line-chart {
+  height: 270px;
+  width: 100%;
+}
+
+.line-charts {
+  width: 56%;
+  display: inline-block;
+  vertical-align:top;
+  border-right: 1px solid #999;
+}
+
+.line-charts-container {
+  width: 90%;
+}
+
+.bar-charts {
+  width: 43%;
+  display: inline-block;
+}
+
+.bar-chart {
+  height: 235px;
+}
+
+.relative-container {
+  position: relative;
+}
